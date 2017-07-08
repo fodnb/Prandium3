@@ -1,0 +1,394 @@
+/*//////////////////Entiresite//////////////////////*/
+
+body {
+    /*background-color: white;*/
+    margin: 0 auto;
+    background-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    font-weight: normal;
+    padding: 0;
+    height: 100%;
+    font-family: 'Harmonia Sans';
+    box-sizing: border-box;
+    background: #fef7ea;
+    /*background-image: -webkit-gradient(linear, left top, left bottom, from(#fbe0b4), to(#fefbf4));
+    background-image: -webkit-linear-gradient(top, #fbe0b4, #fefbf4);
+    background-image: -moz-linear-gradient(top, #fbe0b4, #fefbf4);
+    background-image: linear-gradient(to bottom, #fbe0b4, #fefbf4);*/
+}
+
+legend {
+    color: grey;
+}
+
+label {
+    margin-right: 3%;
+}
+
+select {
+    width: 100%;
+}
+
+.sign-in-btn {
+    /*background-color: coral;
+    letter-spacing: 1.5px;
+    color: white;
+    border: 2px solid red;*/
+}
+
+.panel-body {
+    width: 100%;
+}
+
+
+/*///////////////////    HEADER      ////////////////////*/
+
+#header {
+    /*background-image: url(https://www.freshologize.ca/wp-content/uploads/2015/06/meal-plan-bg.jpg?id=1772);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: coral;
+    color: red;
+    text-shadow: 5px 5px 10px black;
+    text-align: center;*/
+    height: 6%;
+    width: 100%;
+    margin: 0;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+#header:hover {
+    background: #e67e22;
+}
+
+.logo {
+    -webkit-transition: all .6s ease-in-out;
+    -moz-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out;
+    display: flex;
+    align-items: center;
+    font-family: 'Norican', cursive;
+}
+
+#header:hover>.logo {
+    color: #ffffff;
+}
+
+
+/*////////////////////        USERFORM         ////////////////////*/
+
+#loginTitle {
+    float: left;
+    color: gray;
+    font-size: 2rem;
+    margin-bottom: 4%;
+}
+
+#top {
+    width: 95%;
+}
+
+#checkbox {
+    display: flex;
+    flex-direction: row;
+}
+
+#form {
+    width: 70%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+span {
+    /*float: left;*/
+    margin-bottom: 3px;
+}
+
+
+/*//////////////    YelpSearch     ////////////////////////*/
+
+#yelpForm {
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: white;
+    width: 80%;
+}
+
+#restaurantsearch {
+    width: 40%;
+    border: 0;
+    float: left;
+}
+
+#rsContainer {
+    padding: 0;
+}
+
+#yelpSubmit {
+    float: right;
+}
+
+
+/*/////////////////   YELP RESULTS     //////////////////////////*/
+
+#reswell {
+    width: 75%;
+    font-family: 'Harmonia Sans';
+    font-size: 26px;
+    padding: 8%;
+}
+
+#yelpResults {
+    margin: 0 auto;
+    width: 80%;
+}
+
+#roundedImage {
+    margin-bottom: 20px;
+}
+
+#resetYelp {
+    width: 150px;
+    background-color: white;
+    color: skyblue;
+    font-weight: 700;
+    border-color: skyblue;
+    letter-spacing: 6px;
+}
+
+
+/*////////////////////  NAV  /////////////////////////////*/
+
+#nav {
+    display: inline-flex;
+}
+
+
+/*//////////////////////      Day         /////////////////////////////*/
+
+#day-wrapper {
+    /*clear: all;*/
+    width: 13%;
+    float: left;
+    margin-right: 1%;
+    border: 0;
+    padding: 0;
+}
+
+
+/*#day-wrapper: last-child {
+    margin-right: 0;
+}*/
+
+#yelpInMeals {
+    clear: all;
+    border-top: 10px;
+}
+
+
+/*/////////////////////          DAYS       ///////////////////*/
+
+.meal-img {
+    height: 85%;
+    width: 100%;
+}
+
+#day-wrapper {
+    float: left;
+    /*max-width: 30%;*/
+    height: 150px;
+    width: 250px;
+}
+
+#calendar-wrapper {
+    overflow: auto;
+}
+
+.lunch {
+    width: 100%;
+}
+
+
+/*------------------------------major elements------------------*/
+
+#first-spoon {
+    height: 100%;
+    width: 100%;
+}
+
+footer {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #000000;
+    /*opacity: .6;*/
+}
+
+.main-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    z-index: 8;
+}
+
+.calendar-wrapper {
+    padding: 5%;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+
+/*--------------------------login page----------------------------------*/
+
+.bk-img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url(./images/bk.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .7;
+}
+
+.main-login {
+    background: white;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 24vw;
+    padding: 5% 7% 5% 4%;
+    height: 45vh;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .25);
+    opacity: 30%;
+    min-width: 300px;
+}
+
+.form-control {
+    font-family: Roboto, arial, sans-serif;
+    transition: box-shadow 0.3s;
+    outline: 0;
+    height: 5rem;
+    font-size: 1.8rem;
+}
+
+.local-login {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    height: 30vh;
+    justify-content: space-around;
+}
+
+.sign-in-btn {
+    font-family: Roboto, arial, sans-serif;
+    font-weight: 500;
+    letter-spacing: .21px;
+    width: 100%;
+    border: 1px solid transparent;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .25);
+    padding: 15px;
+    border-radius: .3px;
+    background: #e67e22;
+    color: #ffffff;
+}
+
+.googleLogin {
+    position: relative;
+    background-color: #4285f4;
+    font-family: Roboto, arial, sans-serif;
+    font-weight: 500;
+    letter-spacing: .21px;
+    text-align: center;
+    width: 100%;
+    border: 1px solid transparent;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .25);
+    padding: 15px;
+    color: white;
+    border-radius: .3px;
+}
+
+.google-logo {
+    position: absolute;
+    background-image: url(./images/google-favicon.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 3;
+    height: auto;
+    width: 10vw;
+}
+
+.logo {
+    color: #e67e22;
+    font-size: 2.3em;
+    margin-left: 5%;
+}
+
+.primary-text {
+    color: #292f33;
+}
+
+.days-btn {
+    font-family: Roboto, arial, sans-serif;
+    font-weight: 500;
+    letter-spacing: .21px;
+    width: 100%;
+    border: 1px solid transparent;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .25);
+    padding: 15px;
+    border-radius: 70px;
+    background: #e67e22;
+    color: #ffffff;
+}
+
+.main-login {}
+
+
+/*------------------------------Day Selection ------------------------------*/
+
+.day-choice {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.day-selection {
+    background: #ffffff;
+    /*z-index: 2;*/
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    padding: 5%;
+}
+
+.day-choice:checked {
+    color: #e67e22;
+    background: #e67e22;
+}
+
+.calendar-wrapper {
+    width: 64vw;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .25);
+}
