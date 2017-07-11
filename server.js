@@ -1,12 +1,12 @@
-// Include Server Dependencies
+  // Include Server Dependencies
 var express = require("express");
 var bodyParser = require("body-parser");
 var logger = require("morgan");
 var mongoose = require("mongoose");
 var unirest = require("unirest");
 const yelp = require("yelp-fusion");
-const clientId = "pbRwg0shy1Zy_gUqWLpiYQ";
-const clientSecret = "499HGjfOQVwIUWD9ys11menFEA8Ytu77zNrjRCVJ0qYHUQTdpfqdDKNaR7QDYNPy";
+// const clientId = "pbRwg0shy1Zy_gUqWLpiYQ";
+// const clientSecret = "499HGjfOQVwIUWD9ys11menFEA8Ytu77zNrjRCVJ0qYHUQTdpfqdDKNaR7QDYNPy";
 const cors = require("cors");
 var userMeals = require("./models/User.js");
 var unirest = require("unirest");
@@ -30,9 +30,11 @@ app.use(express.static(path.resolve(__dirname, "/public")));
 app.get("/", function (res, res ) {
 
 
-	res.sendFile(__dirname + "/public/index.html");
+  res.sendFile(__dirname + "/public/index.html");
 
 });
+
+
 
 // app.use(function(req, res, next) {
 //   res.header("Access-Control-Allow-Origin", "*");
@@ -100,8 +102,8 @@ passport.deserializeUser(function(user, done) {
 
 
 passport.use(new GoogleStrategy({
-    clientID: "848838294022-7h0tlqrqq67isbjjav949n6uaor9cocl.apps.googleusercontent.com",
-    clientSecret: "V05_x1KklC8XIGls6YCAD-iH",
+    clientID: "690117037135-msqbj0ihidf8d1nuhibcjht651n4e5qd.apps.googleusercontent.com",
+    clientSecret: "L5NBrruaY1G2bK0EkdT6Jz-e",
     callbackURL: "http://localhost:3000/auth/google/callback"
 }, function (accessToken, refreshToken, profile, cb) {
 
@@ -171,6 +173,22 @@ app.get("/logout", function(req, res) {
     req.logout();
     res.redirect("/");
 });
+
+app.get('/loggingout', function(req, res){
+  
+  var obj = {
+    date: '',
+    meals: '',
+    mealsForTheWeek: '',
+    preferences: '',
+    restrictions: '',
+    userEmail: '',
+    userID: '',
+}
+
+  res.send(obj);
+})
+
 
 function isAuthenticated(req, res, next) {
     if (req.user) return next();
