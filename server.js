@@ -104,7 +104,7 @@ passport.deserializeUser(function(user, done) {
 passport.use(new GoogleStrategy({
     clientID: "690117037135-msqbj0ihidf8d1nuhibcjht651n4e5qd.apps.googleusercontent.com",
     clientSecret: "L5NBrruaY1G2bK0EkdT6Jz-e",
-    callbackURL: "http://safe-shore-37083.herokuapp.com/auth/google/callback"
+    callbackURL: "https://safe-shore-37083.herokuapp.com/auth/google/callback"
 }, function (accessToken, refreshToken, profile, cb) {
 
     // console.log(accessToken);
